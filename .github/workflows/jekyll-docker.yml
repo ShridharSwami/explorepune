@@ -1,0 +1,31 @@
+name: Explore Pune Website Build and Deploy
+
+on:
+  push:
+    branches: [main] # Or your main branch name if different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Or your preferred Ruby version
+          bundler-cache: true # Improves build times
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        with:
+          artifact-dir: _site # The directory Jekyll builds into
+          github-token: ${{ secrets.GITHUB_TOKEN }}
