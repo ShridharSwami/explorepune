@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Okayama Friendship Garden- Explore Pune</title>
+    <div class="container">
+        <a href="index.html"><img src="newlogo2.png" alt="horilogo" class="resized-image"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ul class="horizontal-list">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">Home</a></li></button>
+            <button><li>&nbsp;&nbsp;<a href="attractions.html">Attractions</a></li></button>
+            <button><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="temples.html">Temples</a></li></button>
+            <button><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="parks.html">Parks</a></li></button>
+         </ul>
+        </div>
+        <style>
+        
+
+            /* Styles for unvisited links */
+            a:link {
+     color:#085444; /* Default blue color */
+     text-decoration: none; /* Remove underline (optional) */
+     }
+
+     /* Styles for visited links */
+     a:visited {
+     color: #085444; /* Purple for visited links */
+     text-decoration: none;
+     }
+
+     /* Styles when hovering over the link */
+     a:hover {
+     color: #085444; /* Red on hover */
+     text-decoration: underline; /* Add underline on hover (optional) */
+     text-decoration: none;
+     }
+
+     /* Styles when the link is being clicked */
+     a:active {
+     color: #085444; /* Green while clicking */
+     text-decoration: none;
+     }
+     .container {
+     display: flex; /* Enable Flexbox */
+     align-items: center; /* Align items to the top of the container */
+      justify-content: center; /* Align items to the left by default */
+     }
+    
+        img {
+             border-radius: 50px ;
+         
+              width: 1250px;
+              length: 200px;
+             }
+         
+             div{
+                background-color: #085444;
+                font-family:Arial, Helvetica, sans-serif ; font-size: 20px; color:#085444;
+             }
+            .resized-image {
+              width: 300px;  /* Fixed width */
+              height: 100px; /* Fixed height */
+             }
+    
+             body {
+          background-color: #F5F0DC;
+        }
+            
+            /*.gradient-text {
+              font-size: 4em;
+              font-weight: bold;
+              text-transform: uppercase;
+              background-image: linear-gradient(to bottom, white,slategray );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }*/
+             
+             
+    
+            .vertical-list {
+                list-style: none;
+              padding: 0;
+              margin: 0;
+              text-align: center; /* Center text within list items (optional) */
+             }
+    
+                .vertical-list li {
+              margin-bottom: 10px; /* Spacing between list items */
+              list-style: none;
+              }
+            
+    
+             ul.horizontal-list {
+             list-style: none; /* Remove bullet points */
+             padding: 0; /* Remove default padding */
+              margin: 0; /*Remove default margins*/
+              align-self: right;
+             
+             }
+    
+             ul.horizontal-list li {
+             display: inline-block; /* or display: inline */
+             margin-right: 50px; /* Add spacing between items */
+             }
+             
+             ul.vertical-list li {
+                font-family:Arial, Helvetica, sans-serif ; font-size: 20px; color: #085444;
+             }
+             
+             li{
+            font-family:Arial, Helvetica, sans-serif ; font-size: 20px; color: #085444;
+        }
+             .photo-list-container {
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  /* Add any other container styles as needed */
+  list-style: none;
+  
+}
+
+.photo-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Enable Flexbox */
+  white-space: nowrap; /* Prevent list items from wrapping */
+ 
+  justify-content: center;
+}
+
+.photo-list li {
+  margin-right: 10px; /* Add spacing between images */
+  list-style: none;
+  
+}
+
+.photo-list img {
+  max-width: 600px; /* Set a maximum width for the images */
+  height: auto; /* Maintain aspect ratio */
+  /* Add other image styles as needed, e.g., borders, rounded corners */
+  list-style: none;
+}
+button {
+  /* Background */
+  background-color: #F5F0DC; /* Green */
+  background-image: linear-gradient(to bottom right,#F5F0DC,#F5F0DC); /* Gradient */
+
+  /* Text */
+  color:#085444;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: sans-serif; /* Example font */
+  display: inline-block;
+
+  /* Border and Radius */
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+
+  /* Padding and Size */
+  padding:0;
+  margin: 10px;
+  width: 130px; /* Or a specific width */
+  height: 40px; /* Or a specific height */
+
+  /* Cursor and Transition */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+
+  /* Hover Effect */
+}
+
+button:hover {
+  background-color: #085444; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+}
+
+button:active {
+  background-color:#085444; /* Even darker green when clicked */
+  transform: translateY(2px); /* Move slightly down when clicked */
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtler shadow */
+}
+
+/* Disabled Button */
+button:disabled {
+  background-color:#085444;
+  cursor: default;
+  opacity: 0.6; /* Make it appear faded */
+  transform: none;
+  box-shadow: none;
+}
+ul.list-style {
+    text-align: center;
+}
+            </style>
+    </head>
+</head>
+<body>
+    <ul class="vertical-list">
+      <h1 style=" background-color: #F5F0DC; font-family:Arial, Helvetica, sans-serif ; font-size: 30px; color: #085444;">Pune Okayama Friendship Garden- Explore Pune</h1>
+      <div style="background-color: #F5F0DC;">
+            <div class="photo-list-container" style="background-color: #F5F0DC;">
+                <li><ul class="photo-list" style="background-color: #F5F0DC;">
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <li><img src="https://d2dzi65yjecjnt.cloudfront.net/1206297-1.jpg" alt="Agakhan Palace Image 2"></li>
+                       
+                        <li><img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/71000/71516-Pu-La-Deshpande-Garden.jpg" alt="AgakhanPalaceImage 3" style="width: 1500px; length:200px"></li>
+                    </ul>
+            </div>
+    
+            <h3 style="background-color: #F5F0DC;" style="font-family:Arial, Helvetica, sans-serif ; font-size: 30px; color: white;"> Information:</h3>
+            <p style="background-color: #F5F0DC;">
+                The garden was inspired by the 300-year-old Koraku-en Garden in Okayama, so it is also called the Pune-Okayama Friendship Garden. The garden has naturally flowing water from a canal, and this flow has been spread across the garden. The garden is well maintained, and walking on the lawn is not allowed. The garden is built across 10 acres. The style is devised in such a way that people can take a walk through a garden enjoying the landscape, which changes along the garden paths. Visitors can see colourful fish from on top of a small bridge in the center of garden. This Japanese garden has been named after Pu La Deshpande, a well known Marathi writer from Maharashtra, India.
+                The phase 2 of this garden is known as Mughal Garden and is a replica of the Mughal garden in Rashtrapati Bhavan, New Delhi. BJP corporator took up project to install Surya Namaskar statues and those have been opened to public on 19 June 2017 by Mukta Tilak.
+            </p>
+            
+            <h3 style="background-color: #F5F0DC;" style="font-family:Arial, Helvetica, sans-serif ; font-size: 30px; color: white;">Visiting Information:</h3>
+            <ul class="list-style" style="background-color: #F5F0DC;">
+                <li>Timing: 06:00 PM - 10:30 AM and 04:00 PM - 07:30 PM</li>
+                <li>Ticket Price:200/- per person</li>
+            </ul> 
+        </ul>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
